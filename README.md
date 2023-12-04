@@ -6,5 +6,3 @@ Nomad Hub is envisioned as a comprehensive platform designed to enhance the remo
 •	Offer recommendations of places for users.
 •	Enable users to rate places they have visited.
 •	Facilitate communication between users through messaging.
-
-![image](https://github.com/maidaarazic/nomadhub/assets/75145162/cb796108-57e7-461c-b2be-461e0e537bde)
