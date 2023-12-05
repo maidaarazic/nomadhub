@@ -27,7 +27,7 @@ function Navbar() {
     color: '#fff',
     textDecoration: 'none',
     margin: '0 15px',
-    cursor: 'pointer', // Add cursor style to indicate clickable
+    cursor: 'pointer', 
   };
 
   const TextStyle = {
