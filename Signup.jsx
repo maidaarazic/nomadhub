@@ -8,13 +8,12 @@ const Signup = () => {
 
   const handleSignup = async () => {
     try {
-      // Make a POST request to your Spring Boot backend
       const response = await axios.post('http://localhost:8080/api/users/signup', {
         email,
         password,
       });
 
-      console.log(response.data); // You can handle the response as needed
+      console.log(response.data); 
     } catch (error) {
       console.error(error.message);
     }
