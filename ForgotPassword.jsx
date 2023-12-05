@@ -8,11 +8,11 @@ const ForgotPassword = () => {
   const handleForgotPassword = async () => {
     try {
       await firebase.auth().sendPasswordResetEmail(email);
-      // Display a success message or redirect to a confirmation page
+     
       console.log('Password reset email sent successfully');
     } catch (error) {
       console.error(error.message);
-      // Handle error (e.g., display an error message to the user)
+      
     }
   };
 
