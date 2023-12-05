@@ -1,4 +1,3 @@
-// src/components/ForgotPassword.js
 import React, { useState } from 'react';
 import firebase from '../firebase';
 
