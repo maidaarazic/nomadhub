@@ -1,4 +1,3 @@
-// Login.js
 import React, { useState } from 'react';
 import axios from 'axios';
 
@@ -8,13 +7,12 @@ const Login = () => {
 
   const handleLogin = async () => {
     try {
-      // Make a POST request to your Spring Boot backend
       const response = await axios.post('http://localhost:8080/api/users/login', {
         email,
         password,
       });
 
-      console.log(response.data); // You can handle the response as needed
+      console.log(response.data);
     } catch (error) {
       console.error(error.message);
     }
