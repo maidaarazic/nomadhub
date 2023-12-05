@@ -34,7 +34,7 @@ public class PlaceController {
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
-                // Handle errors
+
             }
         });
 
