@@ -18,7 +18,7 @@ const styles = {
   container: {
     textAlign: 'center',
     padding: '20px',
-    backgroundColor: '#001F3F', // Adjust the color to your preference
+    backgroundColor: '#001F3F',
   },
   heading: {
     fontSize: '24px',
@@ -26,13 +26,13 @@ const styles = {
   },
   text: {
     fontSize: '16px',
-    color: '#555', // Adjust the color to your preference
+    color: '#555', 
   },
   button: {
     padding: '10px 20px',
     fontSize: '18px',
-    backgroundColor: '#a30029', // Adjust the color to your preference
-    color: '#FFF', // Adjust the color to your preference
+    backgroundColor: '#a30029', 
+    color: '#FFF', 
     border: 'none',
     borderRadius: '5px',
     cursor: 'pointer',
