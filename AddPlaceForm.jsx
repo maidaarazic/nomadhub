@@ -1,4 +1,3 @@
-// AddPlaceForm.jsx
 import React, { useState } from 'react';
 import axios from 'axios';
 
@@ -6,7 +5,7 @@ const AddPlaceForm = () => {
   const [placeInfo, setPlaceInfo] = useState({
     name: '',
     location: '',
-    // Add other fields
+  
   });
 
   const handleInputChange = (e) => {
@@ -36,7 +35,6 @@ const AddPlaceForm = () => {
           Location:
           <input type="text" name="location" value={placeInfo.location} onChange={handleInputChange} />
         </label>
-        {/* Add other fields */}
         <br />
         <button type="submit">Submit</button>
       </form>
