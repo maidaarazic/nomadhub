@@ -1,4 +1,4 @@
-// ListPlacesPage.jsx
+
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
@@ -21,7 +21,6 @@ const ListPlacesPage = () => {
         <div key={place.id}>
           <p>Name: {place.name}</p>
           <p>Location: {place.location}</p>
-          {/* Add other fields */}
         </div>
       ))}
     </div>
