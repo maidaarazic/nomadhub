@@ -17,19 +17,19 @@ const styles = {
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    height: '100vh', // Set height to 100% of the viewport height
+    height: '100vh', 
     backgroundColor: '#001F3F',
   
   },
   heading: {
     fontSize: '32px',
     marginBottom: '20px',
-    color: '#333', // Adjust the color to your preference
+    color: '#333', 
   },
   description: {
     fontSize: '18px',
     marginBottom: '30px',
-    color: '#555', // Adjust the color to your preference
+    color: '#555', 
   },
   link: {
     textDecoration: 'none',
@@ -37,8 +37,8 @@ const styles = {
   button: {
     padding: '10px 20px',
     fontSize: '18px',
-    backgroundColor: '#a30029', // Adjust the color to your preference
-    color: '#FFF', // Adjust the color to your preference
+    backgroundColor: '#a30029', 
+    color: '#FFF', 
     border: 'none',
     borderRadius: '5px',
     cursor: 'pointer',
