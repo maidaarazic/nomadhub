@@ -17,10 +17,10 @@ const AddPlaceForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Save the new place to the backend
+   
     await axios.post('http://localhost:8080/api/places', placeInfo);
 
-    // Optionally, you can redirect or perform other actions after successful submission
+    
   };
 
   return (
