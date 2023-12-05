@@ -12,7 +12,6 @@ public class UserController {
 
  @PostMapping("/signup")
  public User signup(@RequestBody User user) {
-     // Add validation logic if needed
      return userRepository.save(user);
  }
 
