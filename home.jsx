@@ -14,7 +14,7 @@ function Home() {
     fontSize: '36px',
     marginBottom: '100px',
     textAlign: 'center',
-    whiteSpace: 'pre-wrap', // Allow text to break into multiple lines
+    whiteSpace: 'pre-wrap',
   };
 
   const paragraphStyle = {
@@ -34,7 +34,6 @@ function Home() {
             Welcome to Sarajevo Nomad Hub, your gateway to the vibrant world of remote work, networking, and community in Sarajevo. Whether you're a digital nomad searching for the perfect workspace, a local eager to connect with like-minded professionals, or a workspace owner looking to showcase your venue, Sarajevo Nomad Hub has you covered.
           </p>
         </section>
-        {/* Add more sections or content as needed */}
       </main>
     </div>
   );
