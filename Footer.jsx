@@ -6,7 +6,7 @@ const FooterWithScroll = () => {
   const handleScroll = () => {
     const scrollY = window.scrollY;
 
-    // Adjust the threshold based on when you want the footer to appear
+   
     if (scrollY > 100) {
       setIsScrolled(true);
     } else {
@@ -31,14 +31,14 @@ const FooterWithScroll = () => {
 
 const styles = {
   footer: {
-    backgroundColor: '#333', // Adjust the color to your preference
-    color: '#FFF', // Adjust the color to your preference
+    backgroundColor: '#333', 
+    color: '#FFF', 
     padding: '20px',
     textAlign: 'center',
     position: 'fixed',
-    bottom: isScrolled ? '0' : '-100px', // Adjust the position based on the scroll
+    bottom: isScrolled ? '0' : '-100px', 
     width: '100%',
-    transition: 'bottom 0.3s ease-out', // Add smooth transition
+    transition: 'bottom 0.3s ease-out', 
   },
   text: {
     margin: '0',
