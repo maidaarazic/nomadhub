@@ -7,7 +7,7 @@ public class PlaceRatingReview {
     private List<String> reviews;
     private List<PlaceRatingReview> ratingsAndReviews;
 
-    // Getters
+    
     public double getRating() {
         return rating;
     }
