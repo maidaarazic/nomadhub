@@ -9,10 +9,10 @@ public class RecommendationService {
     @Autowired
     private PlaceRepository placeRepository;
     public List<Place> recommend(Integer userId) {
-        // load the user and their ratings
+        
         User user = userRepository.findById(userId).orElseThrow(() -> new EntityNotFoundException("User not found"));
         List<Rating> ratings = user.getRatings();
-        // calculate the similarity between the user and other users
+       
         Map<Integer, Double> similarities = new HashMap<>();
         for (User otherUser : userRepository.findAll()) {
             if (otherUser.getId().equals(userId)) continue;
@@ -20,7 +20,7 @@ public class RecommendationService {
             double similarity = calculateSimilarity(ratings, otherRatings);
             similarities.put(otherUser.getId(), similarity);
         }
-        // generate the recommendations based on the similarities
+       
         List<Recommendation> recommendations = new ArrayList<>();
         for (Map.Entry<Integer, Double> entry : similarities.entrySet()) {
             User otherUser = userRepository.findById(entry.getKey()).orElseThrow(() -> new EntityNotFoundException("User not found"));
@@ -33,14 +33,14 @@ public class RecommendationService {
                 }
             }
         }
-        // sort the recommendations by predicted rating
+       
         recommendations.sort(Comparator.comparingDouble(Recommendation::getPredictedRating).reversed());
-        // load the top N places from the database
+        
         List<Place> places = placeRepository.findAllById(recommendations.stream().map(Recommendation::getPlace).collect(Collectors.toList()));
         return places;
     }
     private double calculateSimilarity(List<Rating> ratings1, List<Rating> ratings2) {
-        // use the Pearson correlation coefficient formula
+       
         int n = ratings1.size() + ratings2.size();
         if (n == 0) return 0;
         double sum1 = ratings1.stream().mapToDouble(Rating::getRating).sum();
