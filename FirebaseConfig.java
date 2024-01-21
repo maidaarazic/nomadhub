@@ -23,7 +23,6 @@ public class FirebaseConfig {
 
             return FirebaseApp.initializeApp(options);
         } catch (IOException e) {
-            // Print or log the exception message
             e.printStackTrace();
             throw new RuntimeException("Error initializing Firebase: " + e.getMessage());
         }
