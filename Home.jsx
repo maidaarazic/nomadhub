@@ -20,7 +20,7 @@ function Home() {
     fontSize: '36px',
     marginBottom: '100px',
     textAlign: 'center',
-    whiteSpace: 'pre-wrap', // Allow text to break into multiple lines
+    whiteSpace: 'pre-wrap', 
   };
 
   const paragraphStyle = {
